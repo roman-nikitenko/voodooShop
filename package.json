@@ -1,0 +1,18 @@
+{
+  "name": "voodoo",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "roman-nikitenko",
+  "license": "ISC",
+  "dependencies": {
+    "@shopify/shopify-api": "^8.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "tailwindcss": "^3.3.5"
+  }
+}

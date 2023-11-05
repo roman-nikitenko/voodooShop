@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Voodoo</title>
+</head>
+<body class="overflow-x-hidden bg-light-send font-grotesk transition-opacity">
+  <header class="sm:py-12 sm:pl-62 sm:pr-120 p-6 relative flex justify-between border-b border-black">
+
+    <div class="shop_window md:w-[445px] w-screen transition duration-500 translate-x-[445px] pl-[39px] pr-[44px] py-[40px] z-30 absolute text-white bg-black right-0 top-0">
+      <div class="flex items-center justify-between">
+        <span class="text-2xl">Shopping Cart</span>
+        <img class="close__icon cursor-pointer w-[24px] h-[24px]" src="assets/closeLine.svg" alt="close sop window" />
+      </div>
+
+      <ul class="flex gap-[40px] cart-box border-y mt-[22px] mb-[32px] pt-[53px] pb-[32px] text-white bg-black flex flex-col">
+      </ul>
+      <span class="total flex justify-between">
+        <p class="uppercase">total</p>
+        <p class="total__number"></p>
+      </span>
+    </div>
+    <div class="flex sm:gap-x-3 gap-x-1 items-start">
+      <img class="inline sm:w-[45px] sm:h-[45px]" src="assets/Logomark.svg" alt="Logomark">
+      <img class="sm:w-[193px] sm:h-[98px]" src="assets/Logotype.svg" alt="Logotype">
+    </div>
+      <div class="flex sm:items-start items-center">
+        <div class="flex items-center">
+          <div class="cart-button flex items-center relative cursor-pointer">
+            <img class="shop w-[24px] h-[24px]" src="assets/shop.svg" alt="shop">
+          </div>
+
+          <button class="sm:ml-12 sm:text-xl bg-black cursor-pointer text-white ml-4 py-1 px-3.5 rounded  text-sm" type="button">
+            Sign-up
+          </button>
+        </div>
+      </div>
+  </header>
+  <main class="lg:px-120 p-6 transition-all">
+      <div data-dropdown-button class="info relative sm:gap-x-12 mb-12 cursor-pointer rounded flex gap-x-6 bg-black p-6" id="info" aria-expanded="true" aria-haspopup="true">
+      <span class="flex gap-x-1.5">
+        <img src="assets/alert.svg" alt="alert">
+        <p class="text-base text-white font-bold">ALPHA</p>
+      </span>
+
+        <p class="text-white flex-1">Important info</p>
+        <img class="arrow transition ease-in-out duration-500" src="./assets/arrow-down.svg" alt="arrow">
+
+
+      <div data-dropdown-window class="drop_down transition-all opacity-0 ease-in-out duration-500 rounded-b absolute left-0 right-0 top-[70px] border-red-600 z-[20] bg-black" role="menu" aria-orientation="vertical" aria-labelledby="info">
+        <p class="text-white p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi incidunt molestiae nemo nobis voluptatem? Ab, corporis doloremque doloribus ea hic id ipsa maiores minima neque odio quam reiciendis, repellendus, temporibus veniam voluptatibus! Commodi, dignissimos est itaque nam nobis perferendis repudiandae soluta. Adipisci aliquid amet dolor esse pariatur perferendis repellat sed.</p>
+      </div>
+    </div>
+
+
+
+    <div class="cards flex sm:flex-row sm:flex-wrap sm:gap-x-6 lg:pb-70 pb-60 cards  flex-col gap-y-12">
+    </div>
+
+    <div class="pagination flex justify-center lg:mb-196 mb-204">
+      <ul class="pagination__list font-inter flex gap-x-2.5"></ul>
+    </div>
+  </main>
+  <footer class="footer lg:flex-row lg:justify-stretch bg-white font-mono font-bold border-t border-black flex flex-col gap-y-12 p-12">
+
+    <div class="nav flex lg:flex-row justify-between flex-col gap-4 gap-y-12">
+      <div class="sub_nav flex">
+        <ul class="lg:w-300 flex flex-col gap-4">
+          <li><a class="font-bold uppercase" href="#">faq</a></li>
+          <li><a class="font-bold uppercase" href="#">return</a></li>
+          <li><a class="font-bold uppercase" href="#">contact</a></li>
+        </ul>
+
+        <ul class="lg:w-300 flex flex-col gap-4">
+          <li><a class="font-bold uppercase" href="#">rems & conditions</a></li>
+          <li><a class="font-bold uppercase" href="#">privacy policy</a></li>
+          <li><a class="font-bold uppercase" href="#">cookie policy</a></li>
+          <li><a class="font-bold uppercase" href="#">cookie settings</a></li>
+        </ul>
+
+        <ul class="lg:w-300 flex flex-col gap-4">
+          <li><a class="font-bold uppercase" href="#">about voodoo</a></li>
+          <li><a class="font-bold uppercase" href="#">career</a></li>
+          <li><a class="font-bold uppercase" href="#">facebook</a></li>
+          <li><a class="font-bold uppercase" href="#">instagram</a></li>
+        </ul>
+      </div>
+
+
+      <div class="logo lg:px-[110px] flex justify-center  sm:order-first items-end">
+        <img class="lg:h-full w-20 h-20" src="./assets/Logomark.svg" alt="logo mark footer">
+      </div>
+
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
